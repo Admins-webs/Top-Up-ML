@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Up Mobile Legends</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-[#f5f5f5] text-gray-800 font-sans">
+  <header class="bg-white shadow-md p-4">
+    <h1 class="text-xl font-bold text-center text-blue-600">Codashop ML Top Up</h1>
+  </header>
+  <main class="max-w-lg mx-auto mt-6 bg-white rounded-lg shadow p-6">
+    <h2 class="text-lg font-semibold mb-4">Masukkan User ID</h2>
+    <div class="mb-4">
+      <input id="playerId" class="w-full border p-2 rounded mb-2" type="text" placeholder="Masukkan User ID" />
+      <input id="serverId" class="w-full border p-2 rounded" type="text" placeholder="Masukkan Server ID" />
+    </div>
+
+    <h2 class="text-lg font-semibold mb-4">Pilih Nominal</h2>
+    <select id="diamond" class="w-full border p-2 rounded mb-4">
+      <option value="86">86 Diamond - Rp20.000</option>
+      <option value="172">172 Diamond - Rp40.000</option>
+      <option value="257">257 Diamond - Rp60.000</option>
+    </select>
+
+    <h2 class="text-lg font-semibold mb-4">Pilih Pembayaran</h2>
+    <select id="payment" class="w-full border p-2 rounded mb-4">
+      <option value="Gopay">Gopay</option>
+      <option value="Dana">Dana</option>
+      <option value="OVO">OVO</option>
+    </select>
+
+    <button onclick="submitOrder()" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Beli Sekarang</button>
+    <a href="status.html" class="block text-center text-blue-500 mt-4 underline">Cek Status Pesanan</a>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
